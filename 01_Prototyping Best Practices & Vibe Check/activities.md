@@ -24,8 +24,8 @@ Please evaluate your system on the following questions:
 5. Rewrite the following paragraph in a professional, formal tone…
     - Aspect Tested: _Rewriting or tone shifting_
         - Text legibility is not improved.
-        - Did not successfully accomplish the task, instead of shiting the tone, it returned a summary, it lacks in scientific terms which will make this more professional.
-        - Added example from another LLM which does make a better job at shiting the tone.
+        - Did not successfully accomplish the task, instead of shifting the tone, it returned a summary, it lacks in scientific terms which will make this more professional.
+        - Added example from another LLM which does make a better job at shifting the tone.
 
 **NOTE**:
 - Used GPT4.1 mini
