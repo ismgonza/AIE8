@@ -5,7 +5,7 @@ Please evaluate your system on the following questions:
 1. Explain the concept of object-oriented programming in simple terms to a complete beginner.
     - Aspect Tested: _Explain complex topics simple (elucidation)_
         - The text is legible, it properly parses indentation, and breaklines, however it does not do a good job parsing bold font style. It's overall acceptable and easy to read through.
-        - Does not provide an explanation meant for a **complete beginner** it actually introduces advanced technical concepts which might be overwhelming initially like encapsulation, inheritance & polymorphism. It does not provide clear easy analogies which are helpfull when simplifying complext topics
+        - Does not provide an explanation meant for a **complete beginner** it actually introduces advanced technical concepts which might be overwhelming initially like encapsulation, inheritance & polymorphism. It does not provide clear easy analogies which are helpful when simplifying complext topics
 
 2. Read the following paragraph and provide a concise summary of the key points…
     - Aspect Tested: _Text comprenhension & Summarization_
