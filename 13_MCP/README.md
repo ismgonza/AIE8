@@ -7,7 +7,7 @@
 
 | 📰 Session Sheet | ⏺️ Recording     | 🖼️ Slides        | 👨‍💻 Repo         | 📝 Homework      | 📁 Feedback       |
 |:-----------------|:-----------------|:-----------------|:-----------------|:-----------------|:-----------------|
-| [Session 13: MCP](https://www.notion.so/Session-13-Model-Context-Protocol-26acd547af3d8031a5fbf96643aadd3c) |[Recording!](https://us02web.zoom.us/rec/share/EwCgmY7ln-uhPNdzeMJuSbPJb8kbhO_7k3mYzxe8VtLxTFgqlzws5kG8fujgS2ek.HOqLnXRBO2Dv7fDL) (H^ZC0eE6) | [Session 13 Slides](https://www.canva.com/design/DAG2dJMGlIE/80TPN9tQfM86vMuyOD19Zg/edit?utm_content=DAG2dJMGlIE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) | You are here! | [Session 13 Assignment: MCP](https://github.com/AI-Maker-Space/AIE8/tree/main/13_MCP) | [AIE8 Feedback 10/21](https://forms.gle/GDvFghGhy9na2KKJ9)
+| [Session 13: MCP](https://www.notion.so/Session-13-Model-Context-Protocol-26acd547af3d8031a5fbf96643aadd3c) |[Recording!](https://us02web.zoom.us/rec/share/EwCgmY7ln-uhPNdzeMJuSbPJb8kbhO_7k3mYzxe8VtLxTFgqlzws5kG8fujgS2ek.HOqLnXRBO2Dv7fDL) (H^ZC0eE6) | [Session 13 Slides](https://www.canva.com/design/DAG2dJMGlIE/80TPN9tQfM86vMuyOD19Zg/edit?utm_content=DAG2dJMGlIE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) | You are here! | [Session 13 Assignment: MCP](https://forms.gle/8V7mHzPUnxxYN9c17) | [AIE8 Feedback 10/21](https://forms.gle/GDvFghGhy9na2KKJ9)
 
 # Build 🏗️
 
