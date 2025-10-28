@@ -56,6 +56,7 @@ Select the `agent_with_helpfulness` and set one or more interrupts (at least one
 
 What are your thoughts on when you would use a Before interrupt vs. an After interrupt?
 
+---
 ##### ✅ Answer:
 **Before Interrupt:**
 Modify or validate inputs before a node executes.
@@ -78,7 +79,9 @@ Inspect or modify outputs after a node completes.
 * Before = control what goes IN
 * After = control what comes OUT
 
-## 🚧 Advanced Build 🚧 (OPTIONAL - <i>open this section for the requirements</i>)
+---
+
+# 🚧 Advanced Build 🚧 (DONE)
 
 - Create and deploy a locally hosted MCP server with FastMCP. ✅
 - Extend your tools in `tools.py` to allow your LangGraph to consume the MCP Server. ✅
