@@ -78,22 +78,26 @@ Inspect or modify outputs after a node completes.
 * Before = control what goes IN
 * After = control what comes OUT
 
-<details>
-<summary>🚧 Advanced Build 🚧 (OPTIONAL - <i>open this section for the requirements</i>)</summary>
+## 🚧 Advanced Build 🚧 (OPTIONAL - <i>open this section for the requirements</i>)
 
 - Create and deploy a locally hosted MCP server with FastMCP. ✅
 - Extend your tools in `tools.py` to allow your LangGraph to consume the MCP Server. ✅
 
-**Implementation Complete!** See [`MCP_SETUP.md`](./MCP_SETUP.md) for setup instructions.
+**✅ Implementation Complete!** 
 
-**Files Added:**
-- `webzio.py` - Webzio news API client
-- `mcp_server.py` - FastMCP server with get_news tool
-- `MCP_SETUP.md` - Setup and usage guide
+See **[`ADVANCED_HW.md`](./ADVANCED_HW.md)** for complete documentation including:
+- Setup instructions and configuration  
+- Implementation approach and architecture
+- Testing and verification steps
+- Usage examples and troubleshooting
+- Key learnings and references
 
-**Files Modified:**
-- `app/tools.py` - Now loads and integrates MCP server tools
-- `pyproject.toml` - Added fastmcp, langchain-mcp, requests dependencies
+**Quick Start:**
+1. Add `WEBZIO_API_TOKEN` to your `.env` file
+2. Run `uv sync` to install dependencies
+3. Test with `uv run test_mcp.py`
+4. Start server with `uv run langgraph dev`
+5. Agent now has access to `get_news` tool!
 </details>
 
 # Ship 🚢
