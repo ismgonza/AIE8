@@ -6,8 +6,10 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "arxiv>=2.2.0",
+    "fastmcp>=0.2.4",
     "langchain-community>=0.3.8",
     "langchain-core>=0.3.14",
+    "langchain-mcp>=0.1.1",
     "langchain-openai>=0.2.8",
     "langchain-text-splitters>=0.3.2",
     "langgraph==0.6.4",
@@ -17,5 +19,6 @@ dependencies = [
     "pymupdf>=1.24.10",
     "python-dotenv>=1.0.1",
     "qdrant-client>=1.8.0",
+    "requests>=2.32.0",
     "tiktoken>=0.7.0",
 ]

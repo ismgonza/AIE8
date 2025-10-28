@@ -109,6 +109,20 @@ def build_graph():
     graph.add_edge("action", "agent")
     return graph
 
+'''
+Graph Structure
+
+START → agent ──┐
+         ▲      │ (has tool_calls?)
+         │      ├─YES→ action ──┘
+         │      └─NO──→ helpfulness
+         │                │
+         │        ┌───────┴────────┐
+         │        │ (helpful?)     │
+         └────────┤─NO (continue)  │
+                  └─YES (end)→ END
+                  
+'''
 
 graph = build_graph().compile()
 

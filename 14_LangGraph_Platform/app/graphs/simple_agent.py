@@ -51,6 +51,17 @@ def build_graph():
     graph.add_edge("action", "agent")
     return graph
 
+'''
+Graph Sctructure
+
+START → agent ──┐
+         ▲      │ (has tool_calls?)
+         │      ├─YES→ action ──┘
+         │      └─NO──→ END
+         └──────┘
+         
+'''
+
 
 # Export compiled graph for LangGraph Platform
 graph = build_graph().compile()

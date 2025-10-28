@@ -38,8 +38,15 @@ Run the repository and complete the following:
 
 Compare the `agent` and `agent_helpful` assistants defined in `langgraph.json`. Where does the helpfulness evaluator fit in the graph, and under what condition should execution route back to the agent vs. terminate?
 
+---
 ##### ✅ Answer:
-_(enter answer here)_
+The helpfulness evaluator is a node that sits after the agent (when no tool calls are made). It's reached via the `route_to_action_or_helpfulness` conditional edge and uses `helpfulness_decision` to determine the next step.
+Execution routes back to the agent when the evaluator returns `HELPFULNESS:N` (unhelpful answer), continuing the loop.
+Execution terminates in two scenarios:
+1. Helpful answer: Returns HELPFULNESS:Y
+2. Loop limit: After 10 messages, returns HELPFULNESS:END"
+
+---
 
 #### 🏗️ Activity #1 Debugging A Graph
 
@@ -50,15 +57,43 @@ Select the `agent_with_helpfulness` and set one or more interrupts (at least one
 What are your thoughts on when you would use a Before interrupt vs. an After interrupt?
 
 ##### ✅ Answer:
-_(enter answer here)_
+**Before Interrupt:**
+Modify or validate inputs before a node executes.
 
+**Use cases:**
+* Change the query or add context
+* Override tool selection
+* Validate parameters before execution
 
+**After Interrupt:**
+Inspect or modify outputs after a node completes.
+
+**Use cases:**
+* Review agent responses before evaluation
+* Correct tool results
+* Override helpfulness decisions
+* Debug why loops occur
+
+**Key difference:**
+* Before = control what goes IN
+* After = control what comes OUT
 
 <details>
 <summary>🚧 Advanced Build 🚧 (OPTIONAL - <i>open this section for the requirements</i>)</summary>
 
-- Create and deploy a locally hosted MCP server with FastMCP.
-- Extend your tools in `tools.py` to allow your LangGraph to consume the MCP Server.
+- Create and deploy a locally hosted MCP server with FastMCP. ✅
+- Extend your tools in `tools.py` to allow your LangGraph to consume the MCP Server. ✅
+
+**Implementation Complete!** See [`MCP_SETUP.md`](./MCP_SETUP.md) for setup instructions.
+
+**Files Added:**
+- `webzio.py` - Webzio news API client
+- `mcp_server.py` - FastMCP server with get_news tool
+- `MCP_SETUP.md` - Setup and usage guide
+
+**Files Modified:**
+- `app/tools.py` - Now loads and integrates MCP server tools
+- `pyproject.toml` - Added fastmcp, langchain-mcp, requests dependencies
 </details>
 
 # Ship 🚢
